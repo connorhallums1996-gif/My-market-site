@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MarketDesk</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Libraries (loaded from public CDNs) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <a href="#/" class="brand" id="brand">MarketDesk</a>
+    <span class="tag">Educational tools — not financial advice</span>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" id="sidebar"></nav>
+    <main id="view" class="view"></main>
+  </div>
+
+  <!-- World map shapes (Natural Earth, public domain) -->
+  <script src="data/world.js"></script>
+  <!-- Core -->
+  <script src="js/core.js"></script>
+  <script src="js/maps.js"></script>
+  <!-- Pages: each file registers itself with App.register(...) -->
+  <script src="js/pages/home.js"></script>
+  <script src="js/pages/signals.js"></script>
+  <script src="js/pages/backtester.js"></script>
+  <script src="js/pages/ai-chart.js"></script>
+  <script src="js/pages/calculators.js"></script>
+  <script src="js/pages/portfolio.js"></script>
+  <script src="js/pages/journal.js"></script>
+  <script src="js/pages/toolkit.js"></script>
+  <script src="js/pages/cot.js"></script>
+  <script src="js/pages/markets.js"></script>
+  <script src="js/pages/world-maps.js"></script>
+  <script src="js/pages/settings.js"></script>
+  <script>App.start();</script>
+</body>
+</html>
